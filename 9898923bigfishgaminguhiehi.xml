@@ -143,6 +143,7 @@
         <div class="subtitle">
             Credits to Pulsecodes for helping me<br>
             He's one of the devs for Project Existence
+            There over 100+ Games and many more games will be added in the future.
         </div>
 
         <div class="button-container">
@@ -342,7 +343,10 @@
   { name: "Soccer Skills", url: "https://aa6hthgbtn19gwwl28pelv1q-opensocial.googleusercontent.com/gadgets/ifr?url=https://471904738-852049328537117493.preview.editmysite.com/uploads/b/139890129-154348492386095606/files/ssee.xml&container=ig" },  
   { name: "Death Run 3D", url: "https://sv2emrfgjawywpy44osygatn-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@93f7f60b0f054c956ca9b6622f2daeeeb450632c/death_run.xml&container=ig" },  
   { name: "Noob vs Pro", url: "https://bdjfc7hca56th6oqeynmkizy-opensocial.googleusercontent.com/gadgets/ifr?url=https://374610594-153905749316385925.preview.editmysite.com/uploads/b/139890129-538277031118477931/files/nvp.xml&container=ig" }, 
-        ];
+  { name: "Blade Ball", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fblb.xml&amp;&container=ig" },      
+  { name "Watermelon Game", url: "https://d272xss3wq00xu.cloudfront.net/watermelongame.html" },  
+  { name "Now.gg", url: "https://nowgg.lol/" },  
+    ];
 
         function updateClock() {
             const now = new Date();
