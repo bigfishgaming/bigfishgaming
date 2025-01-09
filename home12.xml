@@ -1,0 +1,213 @@
+<Module>
+<ModulePrefs title="X"/>
+<Content type="html">
+<![CDATA[ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyLMS - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Outfit', sans-serif;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        .content {
+            text-align: center;
+            z-index: 3;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            font-size: 44px;
+            color: #a61b1b;
+            text-shadow: 0 0 20px rgba(166,27,27,0.8);
+        }
+
+        .highlight {
+            background: linear-gradient(45deg, #a61b1b, #ff3333);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 20px rgba(166,27,27,0.4);
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #a61b1b, #c52121);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(166,27,27,0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .button:hover::before {
+            left: 100%;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 30px rgba(166,27,27,0.5);
+            background: linear-gradient(45deg, #c52121, #ff3333);
+        }
+
+        .button i {
+            font-size: 20px;
+        }
+
+        .nebula {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center,
+                rgba(166,27,27,0) 0%,
+                rgba(166,27,27,0.1) 40%,
+                rgba(166,27,27,0) 60%
+            );
+            z-index: 2;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="nebula"></div>
+    <div class="content">
+        <h1>
+            <i class="fas fa-graduation-cap logo-icon"></i>
+            <span>Welcome to <span class="highlight">StudyLMS</span></span>
+        </h1>
+        <p>Start your "learning" journey today!</p>
+        <div class="buttons">
+            <a href="#" class="button" onclick="parent.loadPage('partners12.html', 'partnersli')">
+                Partners
+                <i class="fas fa-handshake"></i>
+            </a>
+            <a href="#" class="button" onclick="openInAboutBlank()">
+                About:Blank
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numberOfStars = 150;
+
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                const size = Math.random() * 2 + 1;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                
+                star.style.animationDelay = `${Math.random() * 3}s`;
+                
+                starsContainer.appendChild(star);
+            }
+        }
+
+        function openInAboutBlank() {
+            const win = window.open('about:blank', '_blank');
+            const html = parent.document.documentElement.outerHTML;
+            win.document.write(html);
+            win.document.close();
+        }
+
+        createStars();
+    </script>
+<script src="data:text/javascript;base64,KGZ1bmN0aW9uKCkgewogICAgY29uc3Qgc2V0dGluZ3MgPSBKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd0YWJTZXR0aW5ncycpKSB8fCB7fTsKICAgIGlmIChzZXR0aW5ncy50aXRsZSkgZG9jdW1lbnQudGl0bGUgPSBzZXR0aW5ncy50aXRsZTsKICAgIGlmIChzZXR0aW5ncy5mYXZpY29uKSB7CiAgICAgICAgY29uc3QgZmF2aWNvbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoImxpbmtbcmVsKj0naWNvbiddIikgfHwgZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnbGluaycpOwogICAgICAgIGZhdmljb24ucmVsID0gJ2ljb24nOwogICAgICAgIGZhdmljb24uaHJlZiA9IHNldHRpbmdzLmZhdmljb247CiAgICAgICAgZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChmYXZpY29uKTsKICAgIH0KCiAgICBpZiAoc2V0dGluZ3MucGFuaWNrZXkpIHsKICAgICAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgKGUpID0+IHsKICAgICAgICAgICAgaWYgKGUua2V5LnRvVXBwZXJDYXNlKCkgPT09IHNldHRpbmdzLnBhbmlja2V5LnRvVXBwZXJDYXNlKCkpIHsKICAgICAgICAgICAgICAgIHdpbmRvdy5vcGVuKCdodHRwczovL2NhbnZhcy5pbnN0cnVjdHVyZS5jb20nLCAnX2JsYW5rJywgJ21lbnViYXI9bm8sc3RhdHVzPW5vLGxvY2F0aW9uPW5vJyk7CiAgICAgICAgICAgIH0KICAgICAgICB9KTsKICAgIH0KfSkoKTs="></script>	
+</body>
+</html> ]]>
+</Content>
+</Module>
