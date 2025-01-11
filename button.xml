@@ -1,0 +1,43 @@
+<Module>
+<ModulePrefs title="X"/>
+<Content type="html">
+<![CDATA[ <html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button onclick="createIframe()">Open it!</button>
+
+    <script>
+        function createIframe() {
+            
+            var win = window.open(); 
+          
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            iframe.style.margin = '0';
+
+            
+            var base64Url = "aHR0cHM6Ly9nYW1pbmctb3BlbnNvY2lhbC5nb29nbGV1c2VyY29udGVudC5jb20vZ2FkZ2V0cy9pZnI/dXJsPWh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9iaWdmaXNoZ2FtaW5nL2JpZ2Zpc2hnYW1pbmdAcmVmcy9oZWFkcy9tYWluL2dnZ2FtZWh1Yi54bWwmY29udGFpbmVyPWln";
+           
+          
+          var decodedUrl = atob(base64Url);
+            
+          
+          iframe.src = decodedUrl;
+          
+          
+            win.document.body.appendChild(iframe);
+        }
+    </script>
+</body>
+</html>
+ ]]>
+</Content>
+</Module>
