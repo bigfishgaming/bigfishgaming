@@ -1,0 +1,1153 @@
+<Module>
+<ModulePrefs title="X"/>
+<Content type="html">
+<![CDATA[  
+<!DOCTYPE html> <!--this is gonna get deleted because of that little fuck sitting behind me in class-->
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Tab</title>
+    <link rel="icon" type="image/png"
+        href="https://static-00.iconduck.com/assets.00/chrome-chromeos-logo-icon-256x256-vrc531on.png"> <!--Chrome://newtab favicon-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        /* smooth hover animation for all scripts (selector:hover {})
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                0 0 30px rgba(255, 255, 255, 0.8); */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://64.media.tumblr.com/d60fa89a6c6ef6b51790a079d7204540/f145147b69889cf3-a3/s640x960/1d7480b51aa3c7cfc46d85641dfd9f759eeadd95.gif');
+            background-color: #005;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* background : linear-gradient(#ADD8E6,rgb(86, 101, 219),rgb(29, 97, 131)); Background gradients made by Barney */
+            /* background : radial-gradient(#ADD8E6,rgb(52, 22, 202),rgb(8, 35, 85)); */ 
+        }
+
+        body:hover {
+            cursor: default;
+        }
+
+        h1 {
+            margin-top: 180px;
+            font-size: 24px;
+            font-weight: 700;
+            /* background-color: rgb(14, 55, 168); */
+            background: linear-gradient(#007FFF, #324AB2, #224C98);
+            border: 2px solid #4467C4;
+            box-shadow: 0 0 0 2px #00316E, 0 0 0 4px #2234A8, 0 0 0 6px #00008C;
+            border-radius: 0px;
+            padding: 5px 10.125px;
+            color:rgb(61, 136, 255);
+            background : linear-gradient(#0080FE,rgb(22, 44, 205),rgb(19, 35, 211));
+            font-family: Varela Round;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+        }
+
+        h4 {
+            font-family: 'Varela Round';
+        }
+
+        h4:hover {
+            cursor: default;
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        h3 {
+            font-family: 'Varela Round';
+        }
+
+        h3:hover {
+            cursor: default;
+            background-color: #fff; /* Set background-color to white */
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        h2 {
+            font-family: 'Varela Round';
+            background: linear-gradient(#00FFFFFF,rgb(41, 177, 189),rgb(46, 91, 213));
+            box-shadow: 0 0 0 2px #00316E, 0 0 0 4px #2234A8, 0 0 0 6px #00008C;
+            border: 2px solid #4467C4;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+        }
+
+        h2:hover {
+            cursor: default;
+            background-color: #fff; /* Set background-color to white */
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        h1:hover {
+            cursor: default;
+            background-color: #fff; /* Set background-color to white */
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        @keyframes glow {
+        0% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        50% {
+            text-shadow: 0 0 5px #f5f5f5;
+        }
+        100% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        }
+
+        @-webkit-keyframes glow {
+        0% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        50% {
+            text-shadow: 0 0 5px #f5f5f5;
+        }
+        100% {
+            text-shadow: 0 0 2px #f5f5f5;
+        }
+        }
+    
+        .btn-1 {
+            width: 175px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 5px 15px;
+            border: none;
+            color: white;
+            background-color: rgb(255, 0, 68);
+            border-radius: 4px;
+            box-shadow: inset 0 0 0 0 #f9e506;
+            transition: ease-out 0.3s;
+            font-size: 2rem;
+            outline: none;
+        }
+
+        .btn-1:hover {
+            box-shadow: inset 300px 0 0 0 #f9e506;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: #00FFFF;
+            border: 2px solid #00ff;
+            border-radius: 12px; /* Create rounded rectangle edges */
+            font-weight: 700;
+            font-family: Raleway; /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+        }
+
+        .button-bl {
+            top:0%; /* Position the button to the top left | Credits to Stack Overflow users on this thread https://stackoverflow.com/questions/63541670/how-to-position-a-button-on-website-using-html-css*/
+            left:0%;
+            width:200px;
+            height:40px;
+            position: absolute;
+            z-index: 2; 
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: #00FFFF;
+            border: 2px solid #00ff;
+            border-radius: 12px; /* Create rounded edges */
+            font-weight: 700;
+            font-family: Raleway;
+            /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+        }
+
+        .button-links {
+            top: 0%; /* Position the button to the top right */
+            right: 0%;
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            z-index: 2; 
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: #00FFFF;
+            border: 2px solid #00ff;
+            border-radius: 12px; /* Create rounded edges */
+            font-weight: 700;
+            font-family: Raleway;
+            /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+        }
+
+        .button-roblox-ts { /* TS means troubleshoot */
+            bottom: 0%; 
+            right: 0%;
+            width: 250px;
+            height: 40px;
+            position: absolute;
+            z-index: 2; 
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 10px 20px;
+            background-color: #00008B;
+            color: #00FFFF;
+            border: 2px solid #00ff;
+            border-radius: 12px; /* Create rounded edges */
+            font-weight: 700;
+            font-family: Raleway;
+            /* Use the Raleway font imported from Google Fonts in the <head> for the buttons*/
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+        }
+
+        .button-roblox-ts:hover {
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                /* Glow effect */
+                0 0 30px rgba(255, 255, 255, 0.8);
+            /* More intense glow effect */
+        }
+
+        .button:hover {
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                /* Glow effect */
+                0 0 30px rgba(255, 255, 255, 0.8);
+            /* More intense glow effect */
+        }
+
+        .button-bl:hover {
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                /* Glow effect */
+                0 0 30px rgba(255, 255, 255, 0.8);
+            /* More intense glow effect */
+        }
+
+        .button-links:hover {
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                /* Glow effect */
+                0 0 30px rgba(255, 255, 255, 0.8);
+            /* More intense glow effect */
+        }
+
+        #randomPhrase {
+            font-family: 'Varela Round';
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            background-color: #00316E;
+            border: 2px solid #001C57;
+            border-radius: 6.5px;
+            padding: 5px 10.0125px;
+            color:rgb(32, 91, 241);
+            transition: all 0.3s ease;
+            /* Smooth transition for the glow effect */
+        }
+
+        #randomPhrase:hover {
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            /* Initial shadow effect */
+            background-color: #4169E1;
+            color: #00FFFF;
+            box-shadow: 0 0 15px rgb(17, 27, 215),
+                /* Glow effect */
+                0 0 30px rgba(255, 255, 255, 0.8);
+            /* More intense glow effect */
+            
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Updated styling for the BLOCKS message with white color */
+        #blocksMessage {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            /* White color */
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #blocksMessage:Hover {
+            text-shadow: 0 0 5px #000; /* Add text shadow effect */
+            -webkit-animation: glow 1s; /* Add animation effect */
+            animation: glow 1s;
+        }
+
+        #movingText {
+            position: absolute;
+            top: 50px;
+            /* Adjust according to your layout */
+            left: -100%;
+            /* Start off the screen on the left */
+            font-size: 18px;
+            /* Match the font size with the blocks message */
+            font-weight: bold;
+            /* Make it bold */
+            color: #fff;
+            /* White color */
+            text-transform: uppercase;
+            /* Uppercase text for consistency */
+            animation: moveAcross 10s linear infinite;
+            /* Animation settings */
+        }
+
+        @keyframes moveAcross { /* Animate moving text from left to right */
+            0% {
+                left: -100%;
+                /* Starting position off the left */
+            }
+
+            100% {
+                left: 100%;
+                /* Ending position off the right */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="blocksMessage">ANYONE MAY CONTACT ME AT <a href="mailto:iamohio1@outlook.com"
+            style="color:blue">iamohio1@outlook.com</a></div>
+
+    <!-- Moving Text -->
+    <div id="movingText">HAVE A GREAT TIME!</div>
+
+    <!-- <img src="https://i.imgur.com/v3zKsaK.png"> chattydev -->
+    <h1>~*{ ChattyWebsite }*~</h1>
+    <h4 style="color:blue; background-color:black">Update Log: New games, apps, chatroom button, Proxies button, updated exthang3r, a TON of header hover animations, and theme!</h4>
+    <button id="launchGames" class="button">Games</button>
+    <button id="launchApps" class="button">Apps</button>
+    <button id="chat" class="button">Chatroom</button>
+    <button id="LaunchProxy" class="button">Proxies</button>
+    <button id="launchUltraviolet" class="hidden">Ultraviolet</button>
+    <button id="lanschool" class="hidden">Search history byp@ss</button> <!--Search history bypass has been moved to tools/exploits-->
+    <button id="exploits" class="button">Tools/Exploits</button>
+    <button id="downloads" class="button">Downloads</button>
+    <button id="openInAboutBlank" class="button-bl">About:blank Cloak</button>
+    <button id="changelog" class="hidden">Changelog</button>
+    <button id="roblox-ts" class="button-roblox-ts">Why is Roblox not working?</button>
+    <h2>ChattyWebsite Announcements</h2>
+    <h4>For the windows 11 in browser, the password and username for Apache Guacamole is guacadmin and the password is the same, guacadmin. Check out Barney's Website! https://html.cafe/x715d6947</h4>
+    <button id="links" class="button-links">BCW Links</button>
+    <!-- if any of the button classes are "hidden", they are likely useless or broken -->
+    <div id="randomPhrase"></div>
+    <div id="instructions" class="hidden">
+        <div id="htmlCodeSection" class="hidden">
+            <!-- Custom HTML code will go here -->
+            <h2>Custom HTML Code</h2>
+            <p>This is a placeholder for your custom HTML code. Replace this content as needed.</p>
+            <p>Example: <strong>&lt;div&gt;Your HTML content here&lt;/div&gt;</strong></p>
+        </div>
+        <h2>READ THIS</h2>
+        <p>This is a huge work in progress. If anything gets blocked, follow these
+            steps:<br>Restart your device (Make sure the screen turns black, do power button + refresh key on chromebook).<br>DON'T restore tabs, open this file again, and nothing should be blocked. If it's still blocked, play the games and apps because they can't be blocked.<br>Sorry for the yapping, thanks :D - British Chattyice
+        </p>
+        <button id="continueButton" class="button">Continue</button>
+    </div>
+    <button id="ruffleButton" class="button hidden">Ruffle</button>
+    <audio id="idiotAudio"
+        src="https://ia600208.us.archive.org/35/items/youareanidiotgif/You%20are%20an%20idiot%21%21.mp3" loop></audio>
+
+    <script>
+        document.getElementById("launchBrowser").addEventListener("click", function() {
+    var htmlSection = document.getElementById("htmlCodeSection");
+    // Toggle visibility of the HTML section
+    htmlSection.classList.toggle("hidden");
+  });
+    </script>
+    <script>       
+        document.addEventListener("DOMContentLoaded", function() {
+      var phrases = [
+        "Chatty changed these lol",
+        "helo",
+        "whats up man",
+        "iready suck",
+        "meeeeee",
+        "Back and even better than ever before!",
+        "hluf",
+        "kyse is stealing my aura with sigmafart >:( https://html.cafe/x4922b615",
+        "Everyone's a rizzed up crank",
+        "If you get this message, you are fat",
+        "If you get this message, you're black",
+        "bye schoolwide talking",
+        "bye chattywebsite",
+        "HELIOS BROWSER IS FIREEEEEEE 🔥",
+        "W UPDATES TO HELIOS DINGUSCHAN!",
+        "dinguschan you dropped this → 👑",
+        "sponsored by ducks",
+        "nahhh barney, I stole like 10 splashes from you and you stole all of mine (stay mad >:D)",
+        "2020 was 5 years ago",
+        "i havent showered since last year",
+        "boys bathroom is worse than you (the floors are sticky as hell)",
+        "skribbl.io >>>>> sketchful.io",
+        "joe biden torpedo",
+        "biden boat",
+        "trump torpedo",
+        "Shut up, GoGuardian!",
+        "put more radiation on his mouse the children of this world are doomed",
+        "British ChattyWebsite >>>>>>>>>>> ChattyWebsite",
+        "goodbyee",
+        "This got blocked",
+        "barney, you'll see this at one point, but: in the online chatroom, the Anonymous guy dissing you, I know it was you, barney. i am 100% sure",
+        "what",                                                                     
+        "Sponsored by me lol",
+        "sponsored by youtube",
+        "We got in trouble for this lol",
+        "Show me your meat or im gonna crash outtttttttt",
+        "if u dont want this to get blocked use about:blank cloak",
+        "who broke the chair",
+        "KSI thick of it (but worse) minecraft edition - two negatives make a positive",
+        "guys i think my house is from five nights at freddys 😰😰 AR AR AR AR",
+        "bomb instructions - Google Search",
+        "ChattyWebsite. More like FattyWebsite",
+        "my mom said if i keep going on my computer she will bang my head into my keyboardsoujfh nyieukdhsgj9uovifujd08goiurej fduogiurejf9d8ogu",
+        "hlrugvuj8idfhu gjdfchudhfjifds",
+        "Look guys its a ifvje fdughv jeoisprdxokf",
+        "My name is skibidi toilet",
+        "NoGuardian!",
+        "bricked up bricks, bricked up bricks",
+        "i got one-uped by barney's website",
+        "*DEATH COUNTER ACTIVATED* 2 seconds later: oops i think i broke it",
+        "vscode themes :D",
+        "if you use original australian man i am going to raid a diddy party",
+        "The FitnessGram pacer test is an aerobic capacity test that is a dead meme which I have forgotten the words to.",
+        "michael i will not make the background a wiener",
+        "put https://www.youtube.com/watch?v=TrrpWm_04pc in the background",
+        "Quick! You have the option to pull the lever to switch the trolley rails and kill 1 person, but if you do nothing you kill 5 people. What do you do? Me: both",
+        "Fatso",
+        "updates frequently!",
+        "evidentp: new screensaver unlocked! im just kidding me: ooh goodie lemme use it for chattywebsite",
+        "friday night codin",
+        "Drive me to the skibidi club!",
+        "🥶🥵👌",
+        "here in parkour civilization, no one chooses to jump for the beef. it's better to be safe wit- OH YOU DID IT follow me *falls*",
+        "ytbers: I SURVIVED 24 HOURS IN ROBLOX... pls donate bots: amateurs",
+        "now the gif is looped",
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "school uses blocker *ineffective*",
+        "Ur computer has virus",
+        "thanks reed :DDD 🔥",
+        "Sponsored by.... Nobody :D",
+        "Bro u gotta lock in - Josh",
+        "(╯°□°)╯︵ ┻━┻",
+        "ಠ_ಠ",
+        "(ﾉಥ益ಥ）ﾉ ┻━┻",
+        "ლ(ಠ益ಠ)ლ",
+        ":D",
+        "( ͡° ͜ʖ ͡° )", 
+        "☉_☉",
+        "・_・",
+        "ヽ༼ ಠ益ಠ ༽ﾉ",
+        "ᕙ(•̀‸•́‶)ᕗ",
+        "-_-",
+        ":0",
+        "ERROR - SRC=TROJAN_VIRUS.EXE_RUNFILE NOT FOUND",
+        "roblox mobile is C R I N G E",
+        "imagine playing roblox on an ipad",
+        "imagine playing roblox on a chromebook",
+        "me and barney were talking freaky in the chatroom >:D",
+        "Todays mission: backshot @StarsAreTumbling on Roblox.",
+        "i have a devious ahh plan for StarsAreTumbling",
+        "imagine having the low taper fade",
+        "the still water meme is still massive. you know what else is massive?",
+        "you know what else is big?",
+        "learn python bro",
+        "look guys it's a Pandemonium (no minigames? :((((((( )",
+        "best Pink Guy songs: 'Furr' & 'She's So Nice'",
+        "111111111111111111111",
+        "vscode could you like.. load",
+        "not candlebrute T-T",
+        "finally i got to sebastian i needed that medki-WHERES THE MEDKIT",
+        "pink guy furr is fire bro",
+        "it's super sigma, greg",
+        "chromebooks suck",
+        "forgot my pencil",
+        "nahh im not blocking the games during the day",
+        "oh the weather outside is rizzy",
+        "school lunch is mid",
+        "teacher caught me playing games again",
+        "sorry mr b.... again",
+        "woahh is this a splash text?",
+        "PINK GUY - FURR EARRAPE IS FIRE",
+        "GlacierOS got done dirty by goguardian",
+        "https://bookingportal.mounthoodlodge.info",
+        "Who stole the most messages from ChattyWebsite? Barney's Website: Allow me to introduce myself.",
+        // admit it barney >:D
+        "Roblox Pressure",
+        "dont make sebastian shoot you",
+        "pandemonium, wall dwellers, and candlebearers are my opps",
+        "yeah, just go around shining a light in random peoples faces, i'm sure that'll go well",
+        "TURN. AROUND.",
+        "search lights got me in my safe spot :(",
+        "out of all the things you could've died to, it was the void?",
+        "Look guys, he's playing roblox on windows and not trying to play 10 fps roblox on a chromebook with low.gg and Microsoft Edging!",
+        "Candlebrutes + squiddles kill me every time",
+        "who decided to add wall dwellers T-T",
+        "my homework ate my dog",
+        "snow day seems fun",
+        "brainrot is bad",
+        "ok but could you make this load faster than the average coke addict",
+        "spiders are freaky",
+        "favian is freaky",
+        "cascadia font is the goat",
+        "Critical Error",
+        "Critical Error 2",
+        "gay",
+        "i wonder what people do on their 69th birthday",
+        "fun fact: skribbl.io was the first game I ever played on my school chromebook, back then securly didn't block it and goguardian wasn't installed yet in our district. that's also how I got dirty minded!",
+        "chromebook screens are smallllllllllll",
+        "my eyes feel squished after using a chromebook",
+        "nah that aint happening, if they removed goguardian kids would try to play brawl stars and roblox and minecraft and this in cla- wait this?",
+        "all of these are made with 2 quotation marks with the message inside, and then a comma after the ending quotation mark to let the other messages in the below line appear",
+        "my former bug report form's first response: What is the bug? - 'wussup lil spoon can you fix friday night funkin please vro or imma jump yo all diddy' those were the exact words",
+        "ctrl + ] to move this line to the right",
+        "C H A I R",
+        "chaos in mrs rengifos classroom on 1/9/25 help me im gonna crash out",
+        "pink guy - furr",
+        "the occasional Test button you see is a test to test websites that may work, testing the test. Tests test new tests of the next site update, test.",
+        "did you know that ctrl + w on this tab gives you a secret unblocked windows OS downloadable as an HTML file for you to have an unblocked browser, desktop games, and vscode?",
+        "fun fact: I was scrolling on html.cafe/gallery/ because I found some great sites, like a proxy and other gamess. Then I found this icon that said Download latest version, so I clicked on it and the download button, and when I opened the file, it was British man website! I then found it had working Roblox and ripped off the site and made it chatty",
+        "showers at science camp were freaky we had people jerking, freaky, and talking bout their meatsticks having icicles below them. i had no normal people in my cabin after wednesday D:",
+        "i hate you pinky",
+        "blitz is quicker than my chicken",
+        "fortnite is cringe",
+        "ohh the weather outside is rizzy, rizzy, i tell you, rizzy, it's rizzy outside, rizzy, rizzy, oh yeah, rizzy rizzy weather outside, rizzy, yeah",
+        "help me",
+        "github.dev seems cool",
+        "new text editor unlocked!",
+        "new game website unblocked!",
+        "Hrm, let me think about that.",
+        "There are 2 r's in strawberry",
+        "chatgpt is dumb bro wdym theres only 2 r's in strawberry",
+        "give me the exact coordinates of your bed",
+        "does your room have a lock",
+        "diddy will be under your bed tonight",
+        "shfgd iuxjg",
+        "getliner.com is fire",
+        "whoops i got html.cafe blocked :/",
+        "o/;[lm9kipmknhu,lmkjnhiuyos ,zxpocfldwsda()Sojdois]dsfsdf",
+        "you again?",
+        "barneywebsite... come back",
+        "https://youtube.com/channel/UCnHIZIrhEPBfQJNuQ79O3oA check out the creator of barneywebsite",
+        "github.dev is vscode.dev",
+        "insiders.vscode.dev?",
+        "i hope i dont get codehs blocked",
+        "openprocessing is.. mid",
+        "dinguschan is a W (thanks for helios and dingusproxy)",
+        "What an interesting surprise!",
+        "index.html :D",
+        "github.com - goathub.com",
+        "W dinguschan",
+        "Now with credits for Dinguschan!",
+        "sigma representation",
+        "Syntaxpad glacieros code editor?",
+        "bomb instructions - Google Search",
+        "if you search worst song on youtube thick of it comes up as the first result",
+        "paint me green and call me a pickle",
+        "sigma boy sucks",
+        "a glacierOS unblocked link :D",
+        "noescape.exe has been successfully installed. would you like to open it?",
+        "how did i get a virus from an mp3 file, microsoft defender took a month bro",
+        "12/18/2024 8:58 pm",
+        "Look it's 9:11 on september 11!",
+        "look it's a chrome://kill!",
+        "Look mom, I'm [ REDACTED ]",
+        "yay my carpal tunnel is gone",
+        "BCW Links",
+        "the cw theme is back :D",
+        "npm install teacher-destroying-tutorial.exe",
+        "Hey siri, will AI take over the world?",
+        "Gemini, will AI take over the world?",
+        "Alexa, will AI take over the world?",
+        "Man, dont you hate when youre all like Man i wanna kill some rats, and then the bch-as animal companys like No. So.. what now?",
+        "PETA on my dk, PETA PETA on my dk",
+        "SOME PEOPLE SUCK - SPS >:D",
+        "Look dad i found a pickle",
+        "krunker.io?",
+        "when you get the Welcome back to school! email a day before winter break ends",
+        "teacher.destroy()",
+        "Look guys it's a <html></html>",
+        "/mute mrs-rengifo",
+        "i accidently muted the teacher",
+        "now with more html",
+        "roblox is boring",
+        "yoyo",
+        "hehe",
+        "what is webmc",
+        "oh webmc seems cool",
+        "eaglercraft 1.21.70 real no scam download --->",
+        ":D",
+        "bro called them emoticons",
+        "UnexpectedPillow837 is your new child's name :)",
+        "Sir we never said yes to UnexpectedPillow837",
+        "Sorry the government needs random generated xbox names as new baby names to prevent repeating names plus they get money for it",
+        "https://ibeatkids.com",
+        "elias freaky",
+        "uhh wdym elias was doing inappropriate things to little kids at recess",
+        "69 wpm",
+        "",
+        "when you get the invisible splash and thought the website broke",
+        "cops when they see someone with a gun in roblox: hes a criminal recreate 9/11 on his car dont let him get away!!!!!!!!1!11!1111!!",
+        "free middy",
+        "11:28",
+        "/e dance",
+        "commit 10 reasons why",
+        "i been shooting dogs with BB guns since i was 5",
+        "teacher coming: *gulp",
+        "google maps leaked my address on my own chromebook while i was presenting",
+        "windows >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> chromebook",
+        "you said free website hosting not 1 cent",
+        "look hes giving me threats",
+        "u suck at slope",
+        "TSUNAMI WARNING 12/5/24 REAL COMING TO YOUR BIG AHH CHICKEN",
+        "bro shut up the tsunami is in the coast you arent gonna die",
+        "are you going to kill me? no voicebox uncanny valley thingy peeking around the wall edge: what? nooooo! i mean, yes, but not for a very long while now",
+        "turn the light on if you see your clothes as a person in your room chair",
+        "are ya winning, son? no dad i just lost to a steve skin with all my hacks on",
+        "https://www.youtube-nocookie.com/embed/1Z-vXHNJrXo",
+        "roblox mobile players get instant and automatic skill issues. plus its cringe and you cant play AI test",
+        "PETA tryna take away the fun life, they always sendin people to my condo like 'who you is and how you getting all this mammal fur?' I tell them, go ahead and check a-check that bank roll",
+        "vscode pls load pls load pls load pls load pls load pls load pls load pls load",
+        "broblox6715",
+        "rip cs.jkladesign.com. used to be working doge pr0xy link until the summer of 2024 ended",
+        "we're in hell woah oh ohh this is how the story goes",
+        "Shell shockers please work please work please work please work please work",
+        "Chat is this real?",
+        "100% Legit Robux Vbucks Cracked Minecraft download 100% no scam real",
+        "420/69% Legit Free Roblox Robux easy survey at brobux.win real",
+        "we're in heaven OH OH OH OHH OH O- OH OH OH OHOH OH OH. OHHHHHHHOHOHOH OH OH OH OHOH OH",
+        "GTA 6 free download! ------>",
+        "guys this is something funny",
+        "can someone just send me a suggestion already this is boring",
+        "oh yay 7 suggestions.. only 1 worked and wasnt dumb",
+        "goguardian you need to leave",
+        "i crafted a stone pick trust",
+        "neh neh neh neh",
+        "play presentation experience on roblox",
+        "bloxflip shut down :D",
+        "shit shit shit shit shit shit shit",
+        "gamble /j",
+        "this is the only surviving ogsd game website",
+        "line 276, col 26. spaces: 2. UTF-8 LF HTML Layout: us",
+        "why block vscode its the goat",
+        "rip github pages. goguardian why block the easiest website deployment service :(",
+        "github.io pages used to be unblocked in like 2021",
+        "https://github.com/Chattyice234/british-cw",
+        "zhen yu thinks hes special after i sent him unblocked games and exploits google doc",
+        "URLS are overrated >:l",
+        "not the best idea to use during an iready test",
+        "why does now.gg not work at school D:",
+        "shut up you discombobulated doorknob",
+        "where did he go? he discombobulated outside of existence. Tragic",
+        "Tortilla?",
+        "tortilla blanket",
+        "Hello",
+        "bro wdym im supposed to use 6 px font size? thats tinier than my ba-",
+        "(((colorful parentheses)))", // ((())) i cant find any way to make them color alternate without breaking the site lol
+        "not freaky site anymore :D",
+        "hex code is #69420",
+        "woah glacierOS code editor unlocked",
+        "one step closer to that cloosed bloody door and 2swag would've started a chase sequence saying Press Shift to run. Control to sneak. C to zoom. X to use flashlight.",
+        "GLACIER OS",
+        "fun fact: the mcdonalds logo's colors are meant to make you hungry. the hex code of the red color is FF000d. pretty cool",
+        "dumbrock edition definition: auto jump. sprint jump animation. *walking around normally* YOU DIED! pvp: these animations look like a ripoff animation made with a 10 fps editor",
+        "roblox.uno",
+        "getliner.com doesnt work D:",
+        "roblox please work please work please work please work please work please work please work please work ",
+        "Imagine opening a cabinet and an AI generated spider jumpscare comes out",
+        "but Ms. Birch i never said i wanted to present ne- SHUT UP",
+        "freakbob is calling",
+        "this is anti freakbob",
+        "Like the last website, but without freaky stuff!",
+        "No i'm not adding freaky stuff to this site stay mad",
+        "No i'm not adding freaky stuff to this site stay mad",
+        "No i'm not adding freaky stuff to this site stay mad",
+        "No i'm not adding freaky stuff to this site stay mad",
+        // No i'm not adding freaky stuff to this site stay mad
+        // No i'm not adding freaky stuff to this site stay mad
+        "nvm the site got freaky anyways",
+        "Me after seeing the 10th goofy ahh ripoff this week",
+        "Pissing off your principal since 2023",
+        "Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy? I was crazy once. they locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. ",
+        "Probably not coded by ChatGPT",
+      ];
+
+      var randomIndex = Math.floor(Math.random() * phrases.length);
+      var randomPhrase = phrases[randomIndex];
+      document.getElementById("randomPhrase").textContent = randomPhrase;
+    });
+
+    // document.getElementById("tabCloak").onclick = function() {
+    //   document.title = "Classes";
+    //   document.querySelector('link[rel="icon"]').href = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Google_Classroom_Logo.svg/1186px-Google_Classroom_Logo.svg.png";
+    // }  
+
+    document.getElementById("launchGames").onclick = function() {
+      document.body.innerHTML = "";
+      setTimeout(function() {
+        var games = [
+           { name: "Google", url: "https://google.com/?igu=1" },
+  { name: "Burrito Bison", url: "https://mcpshomeworkhelp-wixsite-com.filesusr.com/html/5378fb_eef382ca8b60fdf11be05f87d6b9f5eb.html" },  
+  { name: "Tye of link", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/ixl-classroom/attach/29dd9d06d1387/lithium.xml?part=0.1&view=1&container=ig" },  
+  { name: "Skibidi Toilet", url: "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://147294106-271957305593713958.preview.editmysite.com/uploads/b/146211889-736862448591698921/files/stio.xml&container=ig" },  
+  { name: "Tiny Fishing", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://72682389-756457502729861133.preview.editmysite.com/uploads/b/11886820-896015480911618794/files/tf.xml&container=ig" },  
+  { name: "The Final Earth 2", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://529473016-184630684593625815.preview.editmysite.com/uploads/b/139890129-811652923688457694/files/tfe2.xml&container=ig" },  
+  { name: "Slope", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@ebc61d8a952e7630c8c5ca3410335bf5d5f04711/src/sp.xml&container=ig" },  
+  { name: "World's Hardest Game", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fthe-world-s-hardest-game.xml&container=ig" },  
+  { name: "Super Hot", url: "https://a6936-20249810.cluster7.canvas-user-content.com/courses/6936~1014013/files/6936~20249810/course%20files/superhot/index.html?download=1&inline=1" },  
+  { name: "There Is No Game", url: "https://a6936-20098220.cluster7.canvas-user-content.com/courses/6936~1014013/files/6936~20098220/course%20files/there%20is%20no%20game/index.html?download=1&inline=1" },  
+  { name: "Cookie Clicker", url: "https://a6936-19424025.cluster7.canvas-user-content.com/courses/6936~1014013/files/6936~19424025/course%20files/cookie%20clicker/index.html?download=1&inline=1" },  
+  { name: "Time Shooter 2", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/element@1dd0b99d2004b84795f2745a5eb3468deb1c38a4/ts2.xml&container=ig" },  
+  { name: "Time Shooter 3", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@0d8fb9c7430567ed0900902593eee6ba2ba8d297/ts3.xml&container=ig" },  
+  { name: "Subway Surfers", url: "https://a6936-19375562.cluster7.canvas-user-content.com/courses/6936~1010708/files/6936~19375562/course%20files/vfcd/index.html" },  
+  { name: "Retro Bowl", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml&container=ig" },  
+  { name: "Fallerz.io", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/learning-Python-3@4abaa4be3df458528ebc4487dcfe6b1c49d4ee7d/notebooks/fall.xml&container=ig" },  
+  { name: "Tetris", url: "https://dionyziz.com/graphics/canvas-tetris/" },  
+  { name: "Snow Rider 3D", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/89574567@71f165531792ae450fe0a522a52ba4e827344de2/sr3d.xml&container=ig" },  
+  { name: "Eggy Car", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/eggy-car/ec.xml&container=ig" },  
+  { name: "Snowball.io", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/SQLite4Unity3d@8516fc0bd1d2be662ca484f5dc506268b24763ef/Example/Assets/snowball.xml&container=ig" },  
+  { name: "Moving Co.", url: "https://movingco.h5games.usercontent.goog/v/8fe98e0f-b1b7-4fc6-8023-200af0320f20/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=yt&userActivityMetrics=true&eids=95340509&features=InterstitialFreqCap__freq_cap_60s%2CInterstitialFreqCap__block_pga_1m_interstitials%2CMonetization__populate_google_global_correlator%2CMonetization__use_ppabg_tag#pc=3401423534985718&preStart=1726706962732" },  
+  { name: "Snowdown Showdown", url: "https://educate.stemfuse.com/sf-serve/76/snowdown_showdown/index.html?class_id=&course_id=&active=" },  
+  { name: "Johnny Trigger", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/yrgen73/Jtrigger@3d4eb8d328bab8af057daa77acd4cee7608f1ec1/jt.xml&container=ig" },  
+  { name: "Elastic Face", url: "https://d21u3ic0kp9e91.cloudfront.net/elasticman/0/index.html" },  
+  { name: "n-gon", url: "https://d272xss3wq00xu.cloudfront.net/n-gon/index.html" },  
+  { name: "Craft Mine", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@bdd7d45deaeaa50131e1913f2f0598cf147f8c56/build/crmine/crmi.xml&container=ig" },  
+  { name: "Stack Bounce", url: "https://stackbounce.h5games.usercontent.goog/v/1aqsvv0aegbjg/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=yt&userActivityMetrics=true&eids=95340509&features=InterstitialFreqCap__freq_cap_60s%2CInterstitialFreqCap__block_pga_1m_interstitials%2CMonetization__populate_google_global_correlator%2CMonetization__use_ppabg_tag#pc=4279443280740350&preStart=1726705971318&gameData=eyJsb2dsZXZlbCI6IkVSUk9SIiwiY2xldmVsQ3VycmVudCI6IjYiLCJjYmVzdFNjb3JlIjoiMTAxMTUiLCJjc3R5bGVJRCI6IjMiLCJjY2hvc2VuU2tpbklkIjoiMCIsImNwbGF0Zm9ybXNCcm9rZW5Ub3RhbCI6IjczMyIsImNsZXZlbC5yaW5nVHlwZUlEIjoiMyIsImNsZXZlbC5yaW5nc0NvdW50IjoiMjAwIiwiY2xldmVsLnJpbmdTY2FsaW5nIjoiMCJ9" },  
+  { name: "Minecraft Parkour", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fminep.xml&container=ig" },  
+  { name: "2048", url: "https://d272xss3wq00xu.cloudfront.net/2048/index.html" },  
+  { name: "Only Up Ball", url: "https://d272xss3wq00xu.cloudfront.net/a/index.html" },  
+  { name: "Pocket Battle Royale", url: "https://pocketbattleroyale.h5games.usercontent.goog/v/7a1tg7kmi4mfg/?origin=https%3A%2F%2Fgamesnacks.com&gameCenterId=yt&userActivityMetrics=true&eids=95340509&features=InterstitialFreqCap__freq_cap_60s%2CInterstitialFreqCap__block_pga_1m_interstitials%2CMonetization__populate_google_global_correlator%2CMonetization__use_ppabg_tag#pc=30652399916874&preStart=1726706652900" },  
+  { name: "Adventure Drivers", url: "https://d272xss3wq00xu.cloudfront.net/adventure-drivers/index.html" },  
+  { name: "Angry Birds", url: "https://d272xss3wq00xu.cloudfront.net/angrybirds/index.html" },  
+  { name: "Aquapark Slides", url: "https://d272xss3wq00xu.cloudfront.net/aquapark-slides/index.html" },  
+  { name: "Backrooms", url: "https://d272xss3wq00xu.cloudfront.net/backrooms/index.html" },  
+  { name: "Bacon May Die", url: "https://d272xss3wq00xu.cloudfront.net/bacon-may-die/index.html" },  
+  { name: "Ball Hop", url: "https://d272xss3wq00xu.cloudfront.net/Ball-Hop/index.html" },  
+  { name: "Ballistic", url: "https://d272xss3wq00xu.cloudfront.net/ballistic/index.html" },  
+  { name: "You Are Jeff Bezos", url: "https://d272xss3wq00xu.cloudfront.net/bezos/index.html" },  
+  { name: "BitLife", url: "https://d272xss3wq00xu.cloudfront.net/bitlife/index.html" },  
+  { name: "Bottle Flip", url: "https://d272xss3wq00xu.cloudfront.net/bottle-flip-3d/index.html" },  
+  { name: "Bottle Flip 3D", url: "https://d272xss3wq00xu.cloudfront.net/bottle-flip/index.html" },  
+  { name: "Candy Crush Saga", url: "https://d272xss3wq00xu.cloudfront.net/candycrushsaga.html" },  
+  { name: "Cars Simulator", url: "https://d272xss3wq00xu.cloudfront.net/cars-simulator/index.html" },  
+  { name: "Chrome Dino", url: "https://d272xss3wq00xu.cloudfront.net/chrome-dino/index.html" },  
+  { name: "Clicker Heroes", url: "https://d272xss3wq00xu.cloudfront.net/clicker-heroes/index.html" },  
+  { name: "Make Sure It's Closed", url: "https://d272xss3wq00xu.cloudfront.net/closed/index.html" },  
+  { name: "Cluster Rush", url: "https://d272xss3wq00xu.cloudfront.net/cluster-rush/index.html" },  
+  { name: "Cooking Frenzy", url: "https://d272xss3wq00xu.cloudfront.net/bitlife/index.html" },  
+  { name: "Crazy Cars", url: "https://d272xss3wq00xu.cloudfront.net/crazy-cars/index.html" },  
+  { name: "Crossy Road", url: "https://d272xss3wq00xu.cloudfront.net/crossyroad/index.html" },  
+  { name: "CS:GO Clicker", url: "https://d272xss3wq00xu.cloudfront.net/csgoclicker/index.html" },  
+  { name: "Cut The Rope", url: "https://d272xss3wq00xu.cloudfront.net/cuttherope-Timetravel/index.html" },  
+  { name: "Epic Stunt Cars", url: "https://d272xss3wq00xu.cloudfront.net/d/index.html" },  
+  { name: "Deal Or No Deal", url: "https://d272xss3wq00xu.cloudfront.net/deal-or-no-deal/index.html" },  
+  { name: "Doodle Jump", url: "https://d272xss3wq00xu.cloudfront.net/doodle-jump/index.html" },  
+  { name: "Draw The Hill", url: "https://d272xss3wq00xu.cloudfront.net/draw-the-hill/index.html" },  
+  { name: "Drift Boss", url: "https://d272xss3wq00xu.cloudfront.net/drift-boss/index.html" },  
+  { name: "Drive Mad", url: "https://d272xss3wq00xu.cloudfront.net/drivemad/index.html" },  
+  { name: "Duck Life 4", url: "https://d272xss3wq00xu.cloudfront.net/ducklife4/index.html" },  
+  { name: "Tap Tap Shots", url: "https://d272xss3wq00xu.cloudfront.net/e/index.html" },  
+  { name: "Edge Surf", url: "https://d272xss3wq00xu.cloudfront.net/edge-surf/index.html" },  
+  { name: "Eel Slap", url: "https://d272xss3wq00xu.cloudfront.net/eel-slap/index.html" },  
+  { name: "Eggy Car", url: "https://d272xss3wq00xu.cloudfront.net/eggy-car/index.html" },  
+  { name: "Fake Virus", url: "https://d272xss3wq00xu.cloudfront.net/fake-virus/index.html" },  
+  { name: "Flappy Bird", url: "https://d272xss3wq00xu.cloudfront.net/FNAF4/index.html" },  
+  { name: "FNAF 4", url: "https://d272xss3wq00xu.cloudfront.net/flappy-bird/index.html" },  
+  { name: "Football Legends", url: "https://d272xss3wq00xu.cloudfront.net/football-legends/index.html" },  
+  { name: "Football Strike", url: "https://d272xss3wq00xu.cloudfront.net/football-strike/index.html" },  
+  { name: "Fruit Ninja", url: "https://d272xss3wq00xu.cloudfront.net/fruitninja/index.html" },  
+  { name: "Geometry Dash", url: "https://d272xss3wq00xu.cloudfront.net/geometry-dash/index.html" },  
+  { name: "Geometry Dash Lite", url: "https://d272xss3wq00xu.cloudfront.net/geometrydash/index.html" },  
+  { name: "Getting Over It", url: "https://d272xss3wq00xu.cloudfront.net/getting-over-it/index.html" },  
+  { name: "Glass City", url: "https://d272xss3wq00xu.cloudfront.net/glass-city/index.html" },  
+  { name: "Google Feud", url: "https://d272xss3wq00xu.cloudfront.net/google-feud/index.html" },  
+  { name: "Google Snake", url: "https://d272xss3wq00xu.cloudfront.net/googlesnake.html" },  
+  { name: "G-Switch 3", url: "https://d272xss3wq00xu.cloudfront.net/gswitch-3/index.html" },  
+  { name: "Hop Pop It", url: "https://d272xss3wq00xu.cloudfront.net/hop-pop-it/index.html" },  
+  { name: "Idle Restaurants", url: "https://d272xss3wq00xu.cloudfront.net/idle-restaurants/index.html" },  
+  { name: "The Impossible Quiz", url: "https://d272xss3wq00xu.cloudfront.net/impossiblequiz/index.html" },  
+  { name: "Jetpack Joyride", url: "https://d272xss3wq00xu.cloudfront.net/jetpack-joyride/index.html" },  
+  { name: "Lemonade Stand", url: "https://d272xss3wq00xu.cloudfront.net/lemonadestand.html" },  
+  { name: "New Super Mario Bros", url: "https://d272xss3wq00xu.cloudfront.net/mario-bros/index.html" },  
+  { name: "Super Mario Bros", url: "https://d272xss3wq00xu.cloudfront.net/mario/index.html" },  
+  { name: "Masked Special Forces", url: "https://d272xss3wq00xu.cloudfront.net/maskedspecialforces/index.html" },  
+  { name: "Minecraft 1.5", url: "https://d272xss3wq00xu.cloudfront.net/minecraft-15/index.html" },  
+  { name: "Minecraft 1.8", url: "https://d272xss3wq00xu.cloudfront.net/minecraft-18/index.html" },  
+  { name: "Minecraft Case", url: "https://d272xss3wq00xu.cloudfront.net/minecraft-case/index.html" },  
+  { name: "Minesweeper", url: "https://d272xss3wq00xu.cloudfront.net/minesweeper/index.html" },  
+  { name: "Moto X3M", url: "https://d272xss3wq00xu.cloudfront.net/Moto-X3M/index.html" },  
+  { name: "Mr. Bullet", url: "https://d272xss3wq00xu.cloudfront.net/mr-bullet/index.html" },  
+  { name: "Nut Simulator", url: "https://d272xss3wq00xu.cloudfront.net/nut-simulator/index.html" },  
+  { name: "osu!", url: "https://d272xss3wq00xu.cloudfront.net/osu.html" },  
+  { name: "OvO 2", url: "https://d272xss3wq00xu.cloudfront.net/ovo-2/index.html" },  
+  { name: "Pacman", url: "https://d272xss3wq00xu.cloudfront.net/pacman/index.html" },  
+  { name: "Papa's Scooperia", url: "https://d272xss3wq00xu.cloudfront.net/papasscooperia/index.html" },  
+  { name: "Paper Minecraft", url: "https://d272xss3wq00xu.cloudfront.net/paper-minecraft/index.html" },  
+  { name: "Paper.io 3", url: "https://d272xss3wq00xu.cloudfront.net/paperio3.html" },  
+  { name: "Papery Planes", url: "https://d272xss3wq00xu.cloudfront.net/papery-planes/index.html" },  
+  { name: "Plants vs Zombies", url: "https://d272xss3wq00xu.cloudfront.net/plantsvszombies/plants%20vs%20zombies.html" },  
+  { name: "Popcat", url: "https://d272xss3wq00xu.cloudfront.net/popcat/index.html" },  
+  { name: "Rise Higher", url: "https://d272xss3wq00xu.cloudfront.net/risehigher/index.html" },  
+  { name: "Rocket League", url: "https://d272xss3wq00xu.cloudfront.net/Rocket-League/index.html" },  
+  { name: "Scrap Metal 3", url: "https://d272xss3wq00xu.cloudfront.net/scrapmetal/index.html" },  
+  { name: "Skibidi Strike", url: "https://d272xss3wq00xu.cloudfront.net/skibidi-strike/index.html" },  
+  { name: "Slope 2", url: "https://d272xss3wq00xu.cloudfront.net/slope-2/index.html" },  
+  { name: "Super Mario 64", url: "https://d272xss3wq00xu.cloudfront.net/sm64/index.html" },  
+  { name: "Smash Karts", url: "https://d272xss3wq00xu.cloudfront.net/smashkarts/index.html" },  
+  { name: "Sniper Shot", url: "https://d272xss3wq00xu.cloudfront.net/sniper-shot/index.html" },  
+  { name: "Soccer Heads", url: "https://d272xss3wq00xu.cloudfront.net/soccer-heads/index.html" },  
+  { name: "Soundboard", url: "https://d272xss3wq00xu.cloudfront.net/soundboard/index.html" },  
+  { name: "Space Company", url: "https://d272xss3wq00xu.cloudfront.net/space-company/index.html" },  
+  { name: "Stack Bump 3D", url: "https://d272xss3wq00xu.cloudfront.net/stack-bump-3d/index.html" },  
+  { name: "Stack", url: "https://d272xss3wq00xu.cloudfront.net/stack/index.html" },  
+  { name: "Stack Ball", url: "https://d272xss3wq00xu.cloudfront.net/stackball/index.html" },  
+  { name: "Stickman Hook", url: "https://d272xss3wq00xu.cloudfront.net/stickman-hook/index.html" },  
+  { name: "Stickman Survival", url: "https://d272xss3wq00xu.cloudfront.net/Stickman-Survival/index.html" },  
+  { name: "Super Mario Run", url: "https://d272xss3wq00xu.cloudfront.net/supermariorun.html" },  
+  { name: "Tactical Assasin 2", url: "https://d272xss3wq00xu.cloudfront.net/tacticalassasin2/index.html" },  
+  { name: "Temple Run 2", url: "https://d272xss3wq00xu.cloudfront.net/temple-run-2/index.html" },  
+  { name: "Territorial", url: "https://d272xss3wq00xu.cloudfront.net/territorial.html" },  
+  { name: "Tunnel Rush", url: "https://d272xss3wq00xu.cloudfront.net/tunnel-rush/index.html" },  
+  { name: "Vex 7", url: "https://d272xss3wq00xu.cloudfront.net/vex7/index.html" },  
+  { name: "Wordle", url: "https://d272xss3wq00xu.cloudfront.net/wordle/index.html" },  
+  { name: "Yohoho", url: "https://d272xss3wq00xu.cloudfront.net/yohoho/index.html" },  
+  { name: "Gun Spin", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/RobiFet/workflow@60b41ef8c9123ae41b86bf04c9b39e1a5713aaa9/bin/gs.xml&container=ig" },  
+  { name: "Rooftop Snipers", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@f8de953e5d955baef80e3994a1105d74ad76315b/Rooftop-Snipers.xml&container=ig" },  
+  { name: "Basket Random", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/classroom-google-new/google.net@main/newgoogletrendd.xml&container=ig" },  
+  { name: "Hole.io", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/Toolkit@93a27eabbbe5eb626af5b9b7dd0926ac16810a41/Code/Java/hole.xml&container=ig" },  
+  { name: "Snake", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://26515722-282596139816136697.preview.editmysite.com/uploads/b/7547235-562404422326578714/files/sis.xml&container=ig" },  
+  { name: "Vex 5", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@dae52f4583f3cc7612451ea7f02965aeff6077bf/build/v5/v5.xml&container=ig" },  
+  { name: "Cookie Clicker", url: "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@0d9afabd2522344a702e1b692ad58039f6290b0d/build/c-c/cc.xml&container=ig" },  
+  { name: "Tomb Of The Mask", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/element@9cccb2fafb569c963501a5d818472b561121cea6/totm.xml&container=ig" },  
+  { name: "Work Madness", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27a7a2ce95d5c/google.xml?part=0.1&view=1&container=ig" },  
+  { name: "Monster Truck Race", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27f7898b1dc1b/yyyy.xml?part=0.1&view=1&container=ig" },  
+  { name: "Geometry Dash 3D", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/54029c83177b1/geyee.xml?part=0.1&view=1&container=ig" },  
+  { name: "Cyber Cars", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/b14b0568a59ba/yu7tc.xml?part=0.1&view=1&container=ig" },  
+  { name: "Aquapark Cars", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/ad1b0f5720964/bbbgf.xml?part=0.1&view=1&container=ig" },  
+  { name: "Aim Trainer", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27a856ab4f4d3/google.xml?part=0.1&view=1&container=ig" },  
+  { name: "Zombie Exploder", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27a8f79c6acbe/google.xml?part=0.1&view=1&container=ig" },  
+  { name: "Mortal Kombat", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27aa8c8fdd5ac/google.xml?part=0.1&view=1&container=ig" },  
+  { name: "Electric Man", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27ab7e09f8875/google.xml?part=0.1&view=1&container=ig" },  
+  { name: "Bounzy 2", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27ad4a72a840f/google.xml?part=0.1&view=1&container=ig" },  
+  { name: "Ambulance Rush", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/27acba29ab944/google.xml?part=0.1&view=1&container=ig" },  
+  { name: "Russians Drive", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/54r7m5resdndren65dx/attach/ac5505094336e/z64.xml?part=0.1&view=1&container=ig" },  
+  { name: "OvO", url: "https://s6jf3nx0gk1d6n-opensocial.googleusercontent.com/gadgets/ifr?url=https://427396048-642845047394716217.preview.editmysite.com/uploads/b/139890129-761103484729797659/files/ovof.xml&container=ig" },  
+  { name: "OvO 2", url: "https://s6jf3nx0gk1d6n-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo2/ovo2.xml&container=ig" },  
+  { name: "Proxy Links", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/u/6/group/google-forms-work/attach/6e87fda052412/googlecom.xml?part=0.1&view=1&authuser=6&container=ig" },  
+  { name: "Do Not Stop", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/classroom-management/teacher@main/dotgoogle.xml&container=ig" },  
+  { name: "BitLife", url: "https://d272xss3wq00xu.cloudfront.net/bitlife/index.html" },  
+  { name: "Helix Jump", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/u/6/group/54r7m5resdndren65dx/attach/a634c8ae323d5/h4643.xml?part=0.1&view=1&authuser=6&container=ig" },  
+  { name: "Pixel Shooter", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/classroomgoogl-net/attach/99c0874f1098d/zy55555.xml?part=0.1&view=1&container=ig" },  
+  { name: "Highway Rider Extreme", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/234sd4w5w45wers5tr-645758574456456/9900@main/5234234.xml?part=0.1&view=1&container=ig" },  
+  { name: "Paper IO 2", url: "https://d272xss3wq00xu.cloudfront.net/paperio2/index.html" },  
+  { name: "Paper IO 3", url: "https://d272xss3wq00xu.cloudfront.net/paperio3.html" },  
+  { name: "Acid Rain", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Facid-rain.xml&container=ig" },  
+  { name: "UNO!", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityPy@388b260053eaa47c3ac01b18c66d5508c6cfe231/tests/samples/uno.xml&container=ig" },  
+  { name: "Elastic Face", url: "https://s6jf3nx0gk1d6n-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/godotpack@e2eaacc90db7a760867d838a1224e490a92da39b/side/eman/face.xml&container=ig" },  
+  { name: "Hill Climbing", url: "https://s6jf3nx0gk1d6n-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bessiegasbarro/HCR@402cc488704523b469aa22506bf4c6c2207097c4/hcr.xml&container=ig" },  
+  { name: "3D Block Builder", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/classroom-management/tyt@main/google.net.xml?part=0.1&view=1&container=ig" },  
+  { name: "Basketball Shooter", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/yrgen73/BSD2@b5104af0b3a445248e829ff728017e5cc40d72e8/bsd2.xml?part=0.1&view=1&container=ig" },  
+  { name: "Bouncy Rush", url: "https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@f5d8c1af690a04f18c72ae56dad76e216b6ecbf2/CacheObject/Bouncy.xml&container=ig" },  
+  { name: "Agar IO lite", url: "https://d272xss3wq00xu.cloudfront.net/agario.html" },  
+  { name: "Mario Party 4", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/f107b843-3661-4036-9397-2b0c6414a369%2Fmarioparty4.xml&container=ig" },  
+  { name: "Dead Zed", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fdead_zed.xml&container=ig" },  
+  { name: "Galaga", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fgalaga.xml&container=ig" },  
+  { name: "Riddle School 1", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Friddle-school.xml&container=ig" },  
+  { name: "Obby Robby", url: "https://qrvqrzbrdnhtbikofnemykr8-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/9ecda005-11e9-4b52-ab9e-700b4d46d00f%2Fobby.xml&container=ig" },  
+  { name: "Soccer Random", url: "https://azqjxdsdtqfbdwfvzlny3kgl-opensocial.googleusercontent.com/gadgets/ifr?url=https://471058263-725410472258601738.preview.editmysite.com/uploads/b/139890129-510930859892590631/files/sr.xml&container=ig" },  
+  { name: "Save My Pet", url: "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/nurimoores/DataSources@9f54c673948151d03a62f5e63c67efaf558759ab/smp.xml&container=ig" },  
+  { name: "Noob Miner", url: "https://my79w0vvvo1to8nev0pnvq08-opensocial.googleusercontent.com/gadgets/ifr?url=https://428048613-274630817493625816.preview.editmysite.com/uploads/b/139890129-289556751581345554/files/nm.xml&container=ig" },  
+  { name: "Soccer Skills", url: "https://aa6hthgbtn19gwwl28pelv1q-opensocial.googleusercontent.com/gadgets/ifr?url=https://471904738-852049328537117493.preview.editmysite.com/uploads/b/139890129-154348492386095606/files/ssee.xml&container=ig" },  
+  { name: "Death Run 3D", url: "https://sv2emrfgjawywpy44osygatn-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@93f7f60b0f054c956ca9b6622f2daeeeb450632c/death_run.xml&container=ig" },  
+  { name: "Noob vs Pro", url: "https://bdjfc7hca56th6oqeynmkizy-opensocial.googleusercontent.com/gadgets/ifr?url=https://374610594-153905749316385925.preview.editmysite.com/uploads/b/139890129-538277031118477931/files/nvp.xml&container=ig" }, 
+
+
+      
+
+        ];
+        var container = document.createElement("div");
+        container.setAttribute("id", "gamesContainer");
+        document.body.appendChild(container);
+
+        var lowestButtonPosition = 0; // Initialize with 0
+
+        games.forEach(function(game) {
+            var button = document.createElement("button");
+            button.textContent = game.name;
+            button.className = "button";
+            button.onclick = function() {
+                // Hide all buttons
+                document.querySelectorAll('.button').forEach(function(element) {
+                    element.style.display = "none";
+                });
+
+                document.getElementById("gamesContainer").innerHTML = '<object id="' + game.name.replace(/ /g, "") + 'Frame" type="text/html" data="' + game.url + '" style="width: 100%; height: 100vh;"></object>';
+            };
+            container.appendChild(button);
+
+            // Update lowestButtonPosition
+            var buttonPosition = button.offsetTop + button.offsetHeight;
+            if (buttonPosition > lowestButtonPosition) {
+                lowestButtonPosition = buttonPosition;
+            }
+        });
+
+        // Add "Request a game" button
+        var requestButton = document.createElement("button");
+        requestButton.textContent = "Request a game/feature/Report A Bug";
+        requestButton.className = "button";
+        requestButton.style.position = "absolute";
+        requestButton.style.top = (lowestButtonPosition + 90) + "px"; // Position 90px below the lowest button
+        requestButton.style.left = "50%";
+        requestButton.style.transform = "translateX(-50%)";
+        requestButton.onclick = function() {
+            document.body.innerHTML = '<object id="requestGameForm" type="text/html" data="https://docs.google.com/forms/d/e/1FAIpQLSf9ckFU6kt7Qr6Lml1k1sY9LmYJF4JhdVya68ojbyOHeskYvA/viewform?embedded=true" style="width: 100%; height: 100vh;"></object>';
+        };
+        document.body.appendChild(requestButton);
+
+    }, 1000);
+};
+
+document.getElementById("launchApps").onclick = function() {
+    document.body.innerHTML = "";
+    setTimeout(function() {
+        var apps = [
+            { name: "HTML.cafe Editor & Gallery", url: "https://html.cafe/" },   
+            { name: "Visual Studio Code", url: "https://html.cafe/x3e7b1ae9" }, 
+            { name: "Search Blocked Github repositories (Credits to Dinguschan-owo on Github)", url: "https://github-repository-search-two.vercel.app/" },
+            { name: "DingusTerminal (Credits to Dinguschan-owo on Github)", url: "https://dingus-terminal.vercel.app/" },
+            { name: "Dinguschan's Blocking Extension Checker", url: "https://installed-blocking-extension-checker.vercel.app/" },
+            { name: "Youtube ( no restrictions :D )", url: "https://www.edu-apps.org/lti_public_resources#/youtube/search" },
+            { name: "YT Alt", url: "https://piped.video" },
+            { name: "ChatGPT", url: "https://dfs3rzq44v6as.cloudfront.net/apps/27ca35c4-2604-4054-b790-b9436b00d06b/?usr-img=../../assets/img/user.webp" },
+            { name: "DeepAI", url: "https://deepai.org/" },
+            { name: "Appetize.io Android Phone", url: "https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?autoplay=false&debug=true&device=pixel4&embed=true&launchUrl=exp%3A%2F%2Fexp.host%2F%40snack%2Fsdk.46.0.0-ghV0%21Qgb8N&scale=65&screenOnly=false&xDocMsg=true&xdocMsg=true&params=%7B&osVersion=11.0&deviceColor=black" },
+            { name: "HTML Website Extractor", url: "https://codebeautify.org/source-code-viewer" },
+            { name: "Gaming Clock", url: "https://html.cafe/x6254d0db" },
+            { name: "Virtual Machine 3 mins", url: "https://www.browserling.com/virtual-browser" },
+            { name: "Virtual Machine 2", url: "https://copy.sh/v86/" },
+            { name: "Gauth Math Helper", url: "https://gauthmath.com" },
+            { name: "ChatGPT With Sources (signup needed)", url: "https://popai.pro/" },
+            { name: "Calculator", url: "https://desmos.com/scientific" },
+            { name: "Windows 10 Emulator", url: "https://dustinbrett.com/" },
+            { name: "AaronOS", url: "https://aaronos.dev/" },
+            { name: "Windows 96", url: "https://windows96.net/" },
+            { name: "Real Windows 11 in browser", url: "https://app.apponfly.com/trial" },
+            { name: "AI Image Generator", url: "https://nuelink.com/tools/ai-image-generator" },
+            { name: "Global Image URL Generator", url: "https://html.cafe/x2a36ad24"},
+            { name: "ChatGPT Alt", url: "https://talkai.info/" },
+            { name: "YT to mp3", url: "https://ezmp3.cc" },
+            { name: "PlayCode.io", url: "https://playcode.io" },
+            { name: "YT to MP3 2 (Cobalt.tools)", url: "https://cobalt.tools" },
+            { name: "HTML Editor and Downloader", url: "https://html.cafe/x978c906e" },
+            { name: "Screen Recorder", url: "https://html.cafe/xf7a71dd8" },
+            { name: "Image URL Generator 2", url: "https://www.imghippo.com/" },
+            { name: "JMW AI Chat", url: "https://infinitetutoring.com.au/history/src/AI" },
+            { name: "Convert URL to blob: URL (Credits to dinguschan-owo on GitHub)", url: "https://html.cafe/xdd7e491d" },
+            { name: "Notepad in JS", url: "https://notepad.js.org/index.html" },
+            { name: "Proxy Link Creator", url: "https://censordodge.com" },
+            { name: "Make a proxy link with Koyeb", url: "https://html.cafe/x7836dbf6" },
+            { name: "Bypass Ad Links (Lootdest)", url: "https://bypass.city" },
+            { name: "Message Encoder/Decoder (Credits to Dinguschan-owo on Github)", url: "https://encoder-decoder-nine.vercel.app/" },
+            { name: "EmulatorJS", url: "https://demo.emulatorjs.org/" },
+            { name: "Syntaxmeets", url: "https://syntaxmeets.vercel.app/" },
+            { name: "Totally works :333", url: "https://artclass.site/" },
+            { name: "Ruffle ( flash games emulator )", action: function() {
+                document.body.innerHTML = '<object id="ruffleFrame" type="text/html" data="https://ruffle.rs/demo/" style="width: 100%; height: 100vh;"></object>';
+            }}
+        ];
+
+        var container = document.createElement("div");
+        container.setAttribute("id", "appsContainer");
+        document.body.appendChild(container);
+
+        apps.forEach(function(app) {
+            var button = document.createElement("button");
+            button.textContent = app.name;
+            button.className = "button";
+            button.onclick = function() {
+                if (app.url) {
+                    document.body.innerHTML = '';
+                    var messageText = document.createElement("p");
+                    messageText.textContent = app.message;
+                    messageText.style.color = "#fff";
+                    messageText.style.marginTop = "20px";
+                    document.body.appendChild(messageText);
+                    document.body.innerHTML = '<object id="appsFrame" type="text/html" data="' + app.url + '" style="width: 100%; height: 100vh;"></object>';
+                } else if (app.action) {
+                    app.action();
+                }
+            };
+            container.appendChild(button);
+        });
+    }, 1000);
+};
+
+document.getElementById("LaunchProxy").onclick = function() {
+    document.body.innerHTML = "";
+    setTimeout(function() {
+        var proxy = [
+            { name: "ByeBlocker Proxy Browser", url: "https://html.cafe/xfe3a414c" },
+            { name: "Helios Proxy Browser (Credits to dinguschan-owo on Github)", url: "https://helios-browser.vercel.app" },
+            { name: "Dingus Proxy Browser (Credits to dinguschan-owo on Github)", url: "https://dinguschan-owo.github.io/dingusproxy/" },
+            { name: "Ultraviolet", url: "https://dfs3rzq44v6as.cloudfront.net/#/prxy" },
+            { name: "BlockAway", url: "https://cdn.blockaway.net/" },
+            { name: "JMW Proxy", url: "https://infinitetutoring.com.au/history/textbook?historicalfigure=browser&type=local" },
+            // { name: "test", url: "" },
+        ];
+
+        var container = document.createElement("div");
+        container.setAttribute("id", "proxyContainer");
+        document.body.appendChild(container);
+
+        proxy.forEach(function(proxy) {
+            var button = document.createElement("button");
+            button.textContent = proxy.name;
+            button.className = "button";
+            button.onclick = function() {
+                if (proxy.url) {
+                    document.body.innerHTML = '';
+                    var messageText = document.createElement("p");
+                    messageText.textContent = proxy.message;
+                    messageText.style.color = "#fff";
+                    messageText.style.marginTop = "20px";
+                    document.body.appendChild(messageText);
+                    document.body.innerHTML = '<object id="proxyFrame" type="text/html" data="' + proxy.url + '" style="width: 100%; height: 100vh;"></object>';
+                } else if (proxy.action) {
+                    proxy.action();
+                }
+            };
+            container.appendChild(button);
+        });
+    }, 1000);
+};
+
+// main menu button functions go here! :D
+    document.getElementById("openInAboutBlank").onclick = function() {
+      var newTab = window.open('about:blank', '_blank');
+      newTab.document.open();
+      newTab.document.write(document.documentElement.outerHTML);  // Embed the current HTML content
+      newTab.document.close();
+    };
+
+    document.getElementById("continueButton").onclick = function() {
+      document.querySelectorAll('.button, h1, #randomPhrase, #instructions').forEach(function(element) {
+        element.classList.add('hidden');
+      });
+      document.body.innerHTML = '<object id="unblockerFrame" type="text/html" data="https://bing.com/" style="width: 100%; height: 100vh;"></object>';
+    };
+
+  document.getElementById("ruffleButton").onclick = function() {
+    document.body.innerHTML = '<object id="ruffleFrame" type="text/html" data="https://ruffle.rs/demo/" style="width: 100%; height: 100vh;"></object>';
+  };
+
+
+
+document.getElementById("launchUltraviolet").onclick = function() {
+  document.body.innerHTML = '<object id="UltravioletFrame" type="text/html" data="https://dfs3rzq44v6as.cloudfront.net/#/prxy" style="width: 100%; height: 100vh;"></object>';
+};
+
+document.getElementById("downloads").onclick = function() {
+  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/xa841843c" style="width: 100%; height: 100vh;"></object>';
+};
+document.getElementById("exploits").onclick = function() {
+  document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x7c581b64" style="width: 100%; height: 100vh;"></object>';
+};
+    document.getElementById("links").onclick = function() {
+  document.body.innerHTML = '<object id="linksFrame" type="text/html" data="https://html.cafe/x1a39d9e5" style="width: 100%; height: 100vh;"></object>';
+};
+document.getElementById("chat").onclick = function() {
+  document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://html.cafe/xc79bd761" style="width: 100%; height: 100vh;"></object>';
+};
+document.getElementById("roblox-ts").onclick = function() {
+  document.body.innerHTML = '<object id="robloxFrame" type="text/html" data="https://html.cafe/x49c5b5b6" style="width: 100%; height: 100vh;"></object>';
+};
+
+// Button scripts no longer in use
+// document.getElementById("launchBrowser").onclick = function() {
+//   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x6c8433a0" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("ai").onclick = function() {
+//   document.body.innerHTML = '<object id="aiFrame" type="text/html" data="https://html.cafe/x2029431d" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("chat").onclick = function() {
+//   document.body.innerHTML = '<object id="chatFrame" type="text/html" data="https://html.cafe/x1b3f9111" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("lanschool").onclick = function() {
+//   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="https://html.cafe/x88b1c570" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("newestver").onclick = function() {
+//   document.body.innerHTML = '<object id="browserFrame" type="text/html" data="" style="width: 100%; height: 100vh;"></object>';
+// };
+// document.getElementById("changelog").onclick = function() {
+//   document.body.innerHTML = '<object id="changelogFrame" type="text/html" data="https://html.cafe/x0ccfcfe7" style="width: 100%; height: 100vh;"></object>';
+// };
+
+    </script> <!--javascript goes byebye-->
+  </body> <!--body goes byebye-->
+</html> <!--html goes byebye--> ]]>
+</Content>
+</Module>
