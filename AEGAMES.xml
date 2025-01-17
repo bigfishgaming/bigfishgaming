@@ -1,0 +1,159 @@
+<Module>
+<ModulePrefs title="X"/>
+<Content type="html">
+<![CDATA[  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Links</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .deployment {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .deployment:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #7ce6ff;
+            font-size: 1.5rem;
+        }
+
+        .deployment p {
+            margin: 1rem 0;
+            opacity: 0.8;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .deployment {
+                margin: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Games Links</h1>
+        <p>Made By Pulsecodes & BigFishGaming Co Onwers are Ae Games</p>
+        <p>More deployments coming soon....</p>
+        <p> More Games coming soon as of right now it's a work in progress</p>
+    </header>
+    
+    <main>
+        <section class="deployment">
+            <h2>CodeHS</h2>
+            <p>Codehs Link</p>
+            <a href="https://gamehub-12687470.codehs.me/index.html" target="_blank" class="button">Go to CodeHS</a>
+        </section>
+        
+        <section class="deployment">
+            <h2>AE Games offical website</h2>
+            <p>coming soon!</p>
+            <a href="https://aeg.zya.me/" target="_blank" class="button">Go to aeg!</a>
+        </section>
+      
+        <section class="deployment">
+            <h2>p5.js</h2>
+            <p>P5.js Link :)</p>
+            <a href="https://editor.p5js.org/BigfishGaming/full/_JhiIw0PD" target="_blank" class="button">Go to p5.js!</a>
+        </section>
+    
+        <section class="deployment">
+            <h2>Open Social (Main)</h2>
+            <p>Game Hub</p>
+            <a href="https://gaming-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bigfishgaming/bigfishgaming@refs/heads/main/BYBFGGAMEHUB.xml&container=ig" target="_blank" class="button">Go to Link!</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Games Link. All rights reserved. No Stealing code Thank you and Good Bye!</p>
+    </footer>
+</body>
+</html> ]]>
+</Content>
+</Module>
