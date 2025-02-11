@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title=":)"/>
+<Content type="html"><![CDATA[
+<!DOCTYPE html>
+<head>
+    <title>AI Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Menu Button */
+        #menu-btn {
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            color: #f5f5f5;
+            z-index: 1000;
+            transition: color 0.3s ease;
+        }
+
+        #menu-btn:hover {
+            color: #3498db;
+        }
+
+        /* Dark Mode Toggle */
+        #dark-mode-toggle {
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: none;
+            border: none;
+            color: #f5f5f5;
+            z-index: 1000;
+            transition: color 0.3s ease;
+        }
+
+        #dark-mode-toggle:hover {
+            color: #3498db;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            width: 280px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: -280px;
+            background: #1a1a1a;
+            padding: 20px;
+            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.4);
+            transition: left 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sidebar.open {
+            left: 0;
+        }
+
+        #sidebar h2 {
+            color: #f5f5f5;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Chat Box */
+        #chatBox {
+            width: 90%;
+            max-width: 600px;
+            height: 80vh;
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Chat Messages */
+        .chatbox {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+            scrollbar-width: thin;
+            scrollbar-color: #444 #1a1a1a;
+        }
+
+        .chatbox::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .chatbox::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+
+        .chatbox::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+
+        .chat {
+            display: flex;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            max-width: 80%;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .chat.chat-outgoing {
+            background: #3498db;
+            align-self: flex-end;
+        }
+
+        .chat.chat-incoming {
+            background: #444;
+            align-self: flex-start;
+        }
+
+        .chat .avatar {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .chat .message {
+            flex: 1;
+            font-size: 0.9rem;
+        }
+
+        /* Chat Input */
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #222;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .chat-input textarea {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #333;
+            color: #f5f5f5;
+            font-size: 0.9rem;
+            resize: none;
+            transition: background 0.3s ease;
+        }
+
+        .chat-input textarea:focus {
+            outline: none;
+            background: #444;
+        }
+
+        .chat-input button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #3498db;
+            color: #f5f5f5;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .chat-input button:hover {
+            background: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 10px;
+            color: #888;
+            font-size: 0.8rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background: #f5f5f5;
+            color: #0a0a0a;
+        }
+
+        body.dark-mode #menu-btn,
+        body.dark-mode #dark-mode-toggle {
+            color: #0a0a0a;
+        }
+
+        body.dark-mode #sidebar {
+            background: #e0e0e0;
+        }
+
+        body.dark-mode #chatBox {
+            background: #f0f0f0;
+            color: #0a0a0a;
+        }
+
+        body.dark-mode .chat.chat-outgoing {
+            background: #3498db;
+            color: #f5f5f5;
+        }
+
+        body.dark-mode .chat.chat-incoming {
+            background: #d0d0d0;
+            color: #0a0a0a;
+        }
+
+        body.dark-mode .chat-input textarea {
+            background: #e0e0e0;
+            color: #0a0a0a;
+        }
+
+        body.dark-mode .chat-input button {
+            background: #3498db;
+            color: #f5f5f5;
+        }
+
+        body.dark-mode .chat-input button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Button -->
+    <button id="menu-btn" aria-label="Toggle sidebar"><i class="ri-menu-3-line"></i></button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode"><i class="ri-moon-line"></i></button>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <h2>AI Chat Box</h2>
+    </div>
+
+    <!-- Chat Box -->
+    <div id="chatBox">
+        <ul class="chatbox"></ul>
+        <div class="chat-input">
+            <textarea placeholder="Type your message..."></textarea>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p> © 2025 BigFishGaming. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const chatInput = document.querySelector('.chat-input textarea');
+        const sendChatBtn = document.querySelector('.chat-input button');
+        const chatbox = document.querySelector(".chatbox");
+        let userMessage;
+        const API_KEY = "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";
+
+        let isOpen = false;
+
+        function toggleMenu(event) {
+            event.stopPropagation();
+            isOpen = !isOpen;
+            sidebar.classList.toggle('open');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        document.addEventListener('click', (e) => {
+            if (isOpen && !sidebar.contains(e.target) && e.target !== menuBtn) {
+                isOpen = false;
+                sidebar.classList.remove('open');
+            }
+        });
+
+        function formatLLMResponse(text) {
+            let formattedText = document.createElement('div');
+            let parts = text.split(/(<think>.*?<\/think>)/s);
+
+            parts.forEach(part => {
+                if (part.startsWith('<think>')) {
+                    let thinkContent = part.replace(/<\/?think>/g, '').trim();
+                    let thinkDiv = document.createElement('div');
+                    thinkDiv.className = 'think-block';
+                    thinkDiv.textContent = thinkContent;
+                    formattedText.appendChild(thinkDiv);
+                } else {
+                    let content = part.trim();
+                    if (content) {
+                        content = content.replace(/\*(.*?)\*/g, '<em>$1</em>');
+                        content = content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                        content = content.replace(/`(.*?)`/g, '<code>$1</code>');
+                        content = content.replace(/~~(.*?)~~/g, '<del>$1</del>');
+                        content = content.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
+                        content = content.replace(/# (.*?)$/gm, '<h1>$1</h1>');
+                        content = content.replace(/## (.*?)$/gm, '<h2>$1</h2>');
+
+                        let contentDiv = document.createElement('div');
+                        contentDiv.innerHTML = content;
+                        formattedText.appendChild(contentDiv);
+                    }
+                }
+            });
+
+            return formattedText.innerHTML;
+        }
+
+        const AI_CONFIG = {
+            baseURL: "https://api.groq.com/openai/v1/chat/completions",
+            model: "deepseek-r1-distill-llama-70b",
+            defaultParams: {
+                temperature: 0.9,
+                max_tokens: 1024,
+                top_p: 1,
+                frequency_penalty: 0,
+                presence_penalty: 0,
+                stream: false
+            }
+        };
+
+        class AI {
+            constructor(apiKey) {
+                this.apiKey = apiKey;
+                this.conversationHistory = [];
+            }
+
+            async generateResponse(userMessage, customParams = {}) {
+                const params = { ...AI_CONFIG.defaultParams, ...customParams };
+
+                this.conversationHistory.push({
+                    role: "user",
+                    content: userMessage
+                });
+
+                const requestBody = {
+                    model: AI_CONFIG.model,
+                    messages: [
+                        { role: "system", content: "You are a helpful AI assistant." },
+                        ...this.conversationHistory
+                    ],
+                    ...params
+                };
+
+                try {
+                    const response = await fetch(AI_CONFIG.baseURL, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Authorization": `Bearer ${this.apiKey}`
+                        },
+                        body: JSON.stringify(requestBody)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API Error: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    const aiResponse = data.choices[0].message.content;
+
+                    this.conversationHistory.push({
+                        role: "assistant",
+                        content: aiResponse
+                    });
+
+                    return aiResponse;
+
+                } catch (error) {
+                    throw new Error(`Failed to generate response: ${error.message}`);
+                }
+            }
+
+            clearConversation() {
+                this.conversationHistory = [];
+            }
+        }
+
+        const ai = new AI(API_KEY);
+
+        const createChatLi = (message, className) => {
+            const chatLi = document.createElement("li");
+            chatLi.classList.add("chat", className);
+            const avatarIcon = className === "chat-outgoing" ? "👤" : "🤖";
+            let chatContent = `
+                <div class="avatar">${avatarIcon}</div>
+                <div class="message">${message}</div>
+            `;
+            chatLi.innerHTML = chatContent;
+            return chatLi;
+        }
+
+        const handleChat = async () => {
+            userMessage = chatInput.value.trim();
+            if (!userMessage) return;
+
+            chatbox.appendChild(createChatLi(userMessage, "chat-outgoing"));
+            chatInput.value = '';
+            chatbox.scrollTo(0, chatbox.scrollHeight);
+
+            const incomingChatLi = createChatLi("Thinking...", "chat-incoming");
+            chatbox.appendChild(incomingChatLi);
+            chatbox.scrollTo(0, chatbox.scrollHeight);
+
+            try {
+                const response = await ai.generateResponse(userMessage);
+                incomingChatLi.querySelector(".message").innerHTML = formatLLMResponse(response);
+            } catch (error) {
+                incomingChatLi.querySelector(".message").textContent = "Oops! Something went wrong. Please try again.";
+                incomingChatLi.querySelector(".message").classList.add("error");
+            } finally {
+                chatbox.scrollTo(0, chatbox.scrollHeight);
+            }
+        }
+
+        sendChatBtn.addEventListener("click", handleChat);
+
+        chatInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                handleChat();
+            }
+        });
+
+        darkModeToggle.onclick = () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                darkModeToggle.innerHTML = '<i class="ri-sun-line"></i>';
+            } else {
+                darkModeToggle.innerHTML = '<i class="ri-moon-line"></i>';
+            }
+        };
+    </script>
+</body>
+</html>
+]]></Content>
+</Module>
